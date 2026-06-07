@@ -1,0 +1,12 @@
+# 凭据与个人数据，绝不入库
+config/config.yaml
+config/tags.yaml
+config/categories.yaml
+config/routing.yaml
+*.token.json
+web_token.json
+.getnote/
+state.json
+__pycache__/
+*.pyc
+.DS_Store

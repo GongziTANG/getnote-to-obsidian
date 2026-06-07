@@ -1,0 +1,20 @@
+# ── 内容分类库 (Categories) ─────────────────────────────────────
+# 你的笔记按「主题类别」初判，用于路由与创作。换成你自己的类别。
+# 每个类别给一组关键词（命中标题优先），脚本据此初判 frontmatter 的「category」。
+# 判不准就归到 fallback。
+
+fallback: "uncategorized"
+
+categories:
+  work:
+    label: "工作"
+    keywords: ["meeting", "项目", "复盘", "汇报", "团队", "客户", "业务"]
+  learning:
+    label: "学习"
+    keywords: ["读书", "课程", "讲座", "tutorial", "article", "book"]
+  life:
+    label: "生活"
+    keywords: ["日常", "感悟", "幸福", "随笔", "身体", "家庭"]
+  ideas:
+    label: "想法"
+    keywords: ["灵感", "创意", "选题", "构思", "点子"]

@@ -1,0 +1,39 @@
+# ── 标签库 (Tag Library) ───────────────────────────────────────
+# 这是一份「可调用、可替换」的标准标签分类法。换成你自己的体系即可。
+# 设计参考 Zettelkasten + PARA：每条笔记建议打 1 个 status + 1 个 type，
+# 领域(domain)按需 0-2 个。脚本归档时按下面规则给笔记打基线标签。
+#
+# 用法：复制为 tags.yaml 后修改。scripts 读取 tags.yaml。
+
+# 归档时给每条导入笔记打的基线标签（不动你的人工判断）
+baseline:
+  - "s/inbox"      # 状态：刚捕捉，待处理
+  - "t/source"     # 类型：外部来源导入
+
+# 笔记状态 status（生命阶段，建议单选）
+status:
+  - "s/inbox"      # 刚捕捉
+  - "s/seed"       # 粗加工有雏形
+  - "s/growing"    # 发展中
+  - "s/evergreen"  # 成熟可调用
+  - "s/archived"   # 封存
+
+# 笔记类型 type（本质属性，建议单选）
+type:
+  - "t/source"     # 导入的外部来源
+  - "t/fleeting"   # 闪念
+  - "t/literature" # 读书/课程/文章摘录
+  - "t/permanent"  # 自己的独立洞见
+  - "t/log"        # 日志/记录
+  - "t/moc"        # 索引地图笔记
+
+# 领域 domain（可选，按需扩充成你自己的知识树）
+domain:
+  - "topic/work"
+  - "topic/learning"
+  - "topic/health"
+  - "topic/life"
+  - "topic/idea"
+
+# 是否把 Get笔记 自带的 AI 标签也写进 frontmatter（建议 true，存在 getnote_tags 字段，不污染主标签树）
+keep_original_ai_tags: true

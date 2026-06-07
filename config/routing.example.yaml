@@ -1,0 +1,26 @@
+# ── 路由库 (Routing) ───────────────────────────────────────────
+# 把笔记放到知识库「该去的文件夹」。换成你自己的目录结构。
+# 规则：先按 category 路由，再用关键词选子文件夹；判不准进 staging。
+# sensitive=true 的目录：脚本只标记进日志请你复核，不擅自细分。
+
+staging: "00_Inbox/_unsorted"        # 拿不准的兜底落点
+
+# category → 目标文件夹（最简：一类一夹）
+by_category:
+  work:        "10_Work"
+  learning:    "20_Knowledge"
+  life:        "30_Journal"
+  ideas:       "40_Ideas"
+  uncategorized: "00_Inbox/_unsorted"
+
+# 关键词 → 子文件夹（优先于 by_category；可标 sensitive）
+# 下面只是「示例」，换成你自己的关键词与目录。sensitive=true 的会在日志里高亮请你复核。
+by_keyword:
+  - keywords: ["会议", "纪要", "meeting", "1:1"]
+    folder: "10_Work/Meetings"
+  - keywords: ["医疗", "病历", "用药", "diagnosis", "medical"]
+    folder: "90_Sensitive/Medical"
+    sensitive: true
+  - keywords: ["财务", "合同", "finance", "legal", "invoice"]
+    folder: "90_Sensitive/Finance"
+    sensitive: true

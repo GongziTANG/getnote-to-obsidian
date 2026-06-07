@@ -1,0 +1,30 @@
+# ── 主配置 (Main Config) ───────────────────────────────────────
+# 复制为 config.yaml 后修改。所有「随你而变」的东西都在这里和 config/ 其它库里。
+
+# Obsidian 库根目录（绝对路径）
+vault: "~/Documents/MyVault"
+
+# 归档暂存子目录（库内，新建独立目录，绝不碰你已有结构）
+inbox_subdir: "00_Inbox/GetNote"
+
+# 录音音频下载目录
+audio_dir: "~/Downloads/GetNote音频"
+
+# 引擎状态/日志
+state_file: "~/.getnote-obsidian/state.json"
+log_subdir: "_Meta/ArchiveLog"
+
+# 平台（创作工作区里建议的发布渠道；换成你自己常用的）
+platforms: ["公众号", "播客", "小红书", "X", "YouTube", "视频号"]
+
+# 开关
+download_audio: true        # 下载录音原件
+fetch_transcript: true      # 抓官方录音原文(audio.original)
+fetch_children: true        # 抓追加笔记(children)
+fetch_sprouts: true         # 抓发芽报告(需 web token，见 docs/SETUP.md)
+write_back_archive_tag: true
+archive_tag: "ArchivedToObsidian"  # 回写 Get笔记 的去重标记
+
+# 凭据文件位置（见 docs/SETUP.md）
+open_api_creds: "~/.getnote/config.json"      # 开放 API: {api_key, client_id}
+web_token_file: "~/.getnote/web_token.json"   # web token: {token, refresh_token, device_id}
